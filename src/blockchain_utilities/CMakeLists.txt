@@ -48,7 +48,7 @@ set(blockchain_import_private_headers
   bootstrap_serialization.h
   )
 
-monero_private_headers(blockchain_import
+dadcoin_private_headers(blockchain_import
 	  ${blockchain_import_private_headers})
 
 set(blockchain_export_sources
@@ -63,11 +63,11 @@ set(blockchain_export_private_headers
   bootstrap_serialization.h
   )
 
-monero_private_headers(blockchain_export
+dadcoin_private_headers(blockchain_export
 	  ${blockchain_export_private_headers})
 
 
-monero_add_executable(blockchain_import
+dadcoin_add_executable(blockchain_import
   ${blockchain_import_sources}
   ${blockchain_import_private_headers}
   ${blocksdat})
@@ -95,7 +95,7 @@ set_property(TARGET blockchain_import
 	PROPERTY
 	OUTPUT_NAME "electroneum-blockchain-import")
 
-monero_add_executable(blockchain_export
+dadcoin_add_executable(blockchain_export
   ${blockchain_export_sources}
   ${blockchain_export_private_headers})
 

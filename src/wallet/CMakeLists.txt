@@ -64,9 +64,9 @@ set(wallet_private_headers
   api/address_book.h
   api/unsigned_transaction.h)
 
-monero_private_headers(wallet
+dadcoin_private_headers(wallet
   ${wallet_private_headers})
-monero_add_library(wallet
+dadcoin_add_library(wallet
   ${wallet_sources}
   ${wallet_api_headers}
   ${wallet_private_headers})
@@ -95,9 +95,9 @@ if (NOT BUILD_GUI_DEPS)
   set(wallet_rpc_private_headers
     wallet_rpc_server.h)
 
-  monero_private_headers(wallet_rpc_server
+  dadcoin_private_headers(wallet_rpc_server
     ${wallet_rpc_private_headers})
-  monero_add_executable(wallet_rpc_server
+  dadcoin_add_executable(wallet_rpc_server
     ${wallet_rpc_sources}
     ${wallet_rpc_headers}
     ${wallet_rpc_private_headers})

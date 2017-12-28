@@ -48,9 +48,9 @@ set(mnemonics_private_headers
   spanish.h
   esperanto.h)
 
-monero_private_headers(mnemonics
+dadcoin_private_headers(mnemonics
   ${mnemonics_private_headers})
-monero_add_library(mnemonics
+dadcoin_add_library(mnemonics
   ${mnemonics_sources}
   ${mnemonics_headers}
   ${mnemonics_private_headers})
